@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3 - Bootstrap</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold text-uppercase m-0"><a href="#">Dev Burger</a></h1>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav mav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Hamburgeria
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#entrega" class="nav-link">
+                            <i class="bi bi-truck me-1"></i>
+                            Opções de entrega
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="assets/carousel/slide1.webp" alt="slide1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/carousel/slide2.webp" alt="slide2">
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+        
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block" src="assets/carousel/slide3.webp">
+                        </div>
+                        <div class="col-md-7 mt-4 mt-md-0">
+                            <h2>Sobre <span class="text-colored">a hamburgeria</span></h2>
+                            <p class="paragraph-color">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos exercitationem possimus
+                                odit commodi ut consectetur itaque corrupti hic est.
+                            </p>
+                            <h3>Sobre <span class="text-colored">o espaço</span></h3>
+                            <p class="paragraph-color">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ab, quos eaque dolor iure.
+                            </p>
+                            <ul>
+                                <li class="paragraph-color">Item 1</li>
+                                <li class="paragraph-color">Item 2</li>
+                                <li class="paragraph-color">Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entrega" class="bg-second-color md-pt-5 md-pb-5">
+            <div class="container">
+                <div class="row pt-5">
+                    <h2 class="text-center">
+                        Para todos <span class="text-colored">os locais</span>
+                    </h2>
+                </div>
+
+                <div class="row mt-4 pb-5">
+                    <div class="col-md-4">
+                        <img src="assets/delivery/entrega1.png" alt="" class="d-block mb-2">
+                        <h3 class="text-colored">
+                            <i class="bi bi-h-circle-fill"></i>
+                            Drone Delivery
+                        </h3>
+                        <p class="paragraph-color">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas sequi doloribus incidunt deleniti labore voluptatum animi eaque nam maxime.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/delivery/entrega2.png" alt="" class="d-block mb-2">
+                        <h3 class="text-colored">
+                            <i class="bi bi-android"></i>
+                            Robô Autônomo Delivery
+                        </h3>
+                        <p class="paragraph-color">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas sequi doloribus incidunt deleniti
+                            labore voluptatum animi eaque nam maxime.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/delivery/entrega3.png" alt="" class="d-block mb-2">
+                        <h3 class="text-colored">
+                            <i class="bi bi-ev-front-fill"></i>
+                            Veículo Autônomo Delivery
+                        </h3>
+                        <p class="paragraph-color">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas sequi doloribus incidunt deleniti
+                            labore voluptatum animi eaque nam maxime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-4 pt-4" id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center pb-4">
+                        Nosso cardápio
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column mb-4 mt-md-0">
+                            <button class="nav-link text-start active" data-bs-toggle="tab" data-bs-target="#burgers"
+                                type="button">Burgers</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#combos"
+                                type="button">Combos</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#bebidas"
+                                type="button">Bebidas</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#acompanhamento"
+                                type="button">Acompanhamento</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="burgers">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/burger.jpeg">
+                                        <h5 class="mt-2 text-colored">Burger Delicia</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/burger.jpeg">
+                                        <h5 class="mt-2 text-colored">Burger Delicia</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/burger.jpeg">
+                                        <h5 class="mt-2 text-colored">Burger Delicia</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/burger.jpeg">
+                                        <h5 class="mt-2 text-colored">Burger Delicia</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/burger.jpeg">
+                                        <h5 class="mt-2 text-colored">Burger Delicia</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/burger.jpeg">
+                                        <h5 class="mt-2 text-colored">Burger Delicia</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="combos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/combo.jpeg">
+                                        <h5 class="mt-2 text-colored">Combo Topzeira</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/combo.jpeg">
+                                        <h5 class="mt-2 text-colored">Combo Topzeira</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/combo.jpeg">
+                                        <h5 class="mt-2 text-colored">Combo Topzeira</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/combo.jpeg">
+                                        <h5 class="mt-2 text-colored">Combo Topzeira</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/combo.jpeg">
+                                        <h5 class="mt-2 text-colored">Combo Topzeira</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="assets/cardapio/combo.jpeg">
+                                        <h5 class="mt-2 text-colored">Combo Topzeira</h5>
+                                        <p class="paragraph-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="tab-pane" id="bebidas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/bebida.jpeg">
+                                        <h5 class="mt-2 text-colored">Bebida Dilicia</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/bebida.jpeg">
+                                        <h5 class="mt-2 text-colored">Bebida Dilicia</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/bebida.jpeg">
+                                        <h5 class="mt-2 text-colored">Bebida Dilicia</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/bebida.jpeg">
+                                        <h5 class="mt-2 text-colored">Bebida Dilicia</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/bebida.jpeg">
+                                        <h5 class="mt-2 text-colored">Bebida Dilicia</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/bebida.jpeg">
+                                        <h5 class="mt-2 text-colored">Bebida Dilicia</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="tab-pane" id="acompanhamento">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/acompanhamento.jpeg">
+                                        <h5 class="mt-2 text-colored">Acompanhamento Saboroso</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/acompanhamento.jpeg">
+                                        <h5 class="mt-2 text-colored">Acompanhamento Saboroso</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/acompanhamento.jpeg">
+                                        <h5 class="mt-2 text-colored">Acompanhamento Saboroso</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/acompanhamento.jpeg">
+                                        <h5 class="mt-2 text-colored">Acompanhamento Saboroso</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/acompanhamento.jpeg">
+                                        <h5 class="mt-2 text-colored">Acompanhamento Saboroso</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/cardapio/acompanhamento.jpeg">
+                                        <h5 class="mt-2 text-colored">Acompanhamento Saboroso</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="bg-second-color pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="text-colored fw-bold fs-4 mb-2">
+                            <i class="bi bi-envelope-fill"></i>
+                            Envie uma mensagem
+                        </div>
+                        <form>
+                            <div>
+                                <label for="nome" class="form-label">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required placeholder="Digite seu nome">
+                            </div>
+                            <div>
+                                <label for="email" class="form-label">Seu email</label>
+                                <input type="email" id="email" class="form-control" placeholder="email@email.com" required>
+                            </div>
+                            <div>
+                                <label for="telefone" class="form-label">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+                            </div>
+                            <div>
+                                <label for="mensagem" class="form-label">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="text-colored fw-bold fs-4 mb-2">
+                                <i class="bi bi-people-fill"></i>
+                                Redes sociais
+                            </div>
+                            <ul class="social-links">
+                                <li class="fs-3">
+                                    <a class="facebook" href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 ms-1 me-1">
+                                    <a class="instagram" href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a class="whatsapp" href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="text-colored fw-bold fs-4">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="text-colored">
+                                Rua Dev nº 777, Bairro Bootstrap - Campinas SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="pt-5 pb-5">
+        <div class="container eu pt-5 pb-5">
+            <h3>Desenvolvido por <span class="magic"><a href="https://github.com/SrDev-Henrique">SrDevHenrique</a></span></h3>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#telefone').mask('(00) 00000-0000');
+    });
+</script>
+
+</html>

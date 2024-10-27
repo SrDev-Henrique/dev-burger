@@ -1,0 +1,153 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --title-color: #1D1D1F;
+    --paragraph-color: #2C2C2E;
+    --header-bg-color: #ffffff93;
+    --secondary-bg-color: #e8e8ed
+}
+
+body{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.bg-second-color{
+    background-color: var(--secondary-bg-color);
+}
+
+.text-colored{
+    color: var(--title-color);
+}
+
+.paragraph-color{
+    color: var(--paragraph-color);
+}
+
+header{
+    backdrop-filter: blur(10px);;
+}
+
+header .container h1{
+    color: var(--secondary-color);
+}
+
+.nav .nav-link.active{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.navbar-brand a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav .nav-link,
+.navbar-brand a,
+.navbar-brand a:hover{
+    color: var(--secondary-color);
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-inner{
+    width: 100%;
+}
+
+.carousel-inner img{
+    filter: brightness(60%);
+    border-radius: 0;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.facebook i{
+    transition: 0.1s;
+}
+
+.facebook i:hover{
+    color: #1877F2;
+}
+
+.instagram i {
+    transition: 0.1s;
+    background: var(--title-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--title-color);
+    background-clip: text;
+    color: var(--title-color);
+}
+
+.instagram i:hover {
+    background: linear-gradient(45deg, #833AB4, #C13584, #FD1D1D, #FCAF45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.whatsapp i{
+    transition: 0.1s;
+}
+
+.whatsapp i:hover{
+    color: #25D366;
+}
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+.eu{
+    color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eu .magic{
+    background: linear-gradient(
+        135deg,
+        #00BFFF,
+        #00BFFF,
+        #4B0082,
+        #4B0082,
+        #8A2BE2,
+        #8A2BE2,
+        #8A2BE2,
+        #8A2BE2,
+        #4B0082,
+        #4B0082,
+        #1E90FF,
+        #1E90FF
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    background-position: 0%;
+    background-size: 200%;
+    transition: 3s;
+}
+
+.eu .magic:hover{
+    background-position: 300%;
+    font-size: 2rem;
+}
+
+.eu a{
+    text-decoration: none;
+}
