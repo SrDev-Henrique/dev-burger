@@ -55,13 +55,15 @@ img{
     border-radius: 10px;
 }
 
-.carousel-inner{
-    width: 100%;
-}
-
 .carousel-inner img{
     filter: brightness(60%);
     border-radius: 0;
+}
+
+form .btn{
+    background-color: var(--title-color);
+    color: var(--primary-color);
+    width: 100%;
 }
 
 .social-links li{
